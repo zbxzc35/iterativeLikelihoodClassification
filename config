@@ -1,0 +1,21 @@
+inputSigFile	toyTrain.root 
+inputBkgFile	toyTrain.root
+sigTree		TreeSTrain
+bkgTree		TreeBTrain
+nVariable	4 
+variableNames	var1 var2 var3 var4
+nSeperator	0
+seperatorNames	  
+transFormType   2	
+densityNBins    100	
+cachePdfNBins   200	
+nThreads	4	
+doThecondPass   0	
+expression      var4+(var1+(var2+var3))
+outputFile      toyTrainResult.root
+auto		1
+plotRoc		1
+dataBase        parameterDataBase.root
+nTerms          10
+epsilon         0.01
+

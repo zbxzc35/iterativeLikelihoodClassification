@@ -1,0 +1,310 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="ctl00_ctl00_NICEMasterPageHead"><meta name="viewport" content="width=device-width, target-densityDpi=160dpi, initial-scale=1" /><meta name="MobileOptimized" content="width" /><meta name="HandheldFriendly" content="true" /><meta name="apple-mobile-web-app-capable" content="yes" /><meta http-equiv="cleartype" content="on" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><link href="https://framework.web.cern.ch/framework/2.0/fonts/PTMonoWeb/PTM55Fstylesheet.css" rel="Stylesheet" type="text/css" /><link href="https://framework.web.cern.ch/framework/2.0/fonts/PTSansWeb/PTSansWeb.css" rel="Stylesheet" type="text/css" /><link href="https://framework.web.cern.ch/framework/2.0/fonts/PTSerifWeb/PTSerifWeb.css" rel="Stylesheet" type="text/css" />
+
+    
+    <link href="/adfs/ls/MasterPages/toolbar/css/toolbar.css" rel="stylesheet" type="text/css" />
+    <!--[if lt IE 8]>
+        <link href="/adfs/ls/MasterPages/toolbar/css/toolbar-ie.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+
+    
+    <title>Cern Authentication</title>
+
+  <link href="/adfs/ls/favicon.ico" rel="ICON" type="image/x-icon" />
+  <link href="/adfs/ls/favicon.ico" rel="SHORTCUT ICON" type="image/x-icon" />
+  <meta name="application-name" content="sso-management" />
+  
+  <!-- up to 5 tasks can be defined -->
+
+
+    
+    <script language="javascript" type="text/javascript">
+        function showhide2fa() {
+            if (document.getElementById('ctl00_ctl00_NICEMasterPageBodyContent_SiteContentPlaceholder_div2FAAuthSystems').style.display == 'inline') {
+                document.getElementById('ctl00_ctl00_NICEMasterPageBodyContent_SiteContentPlaceholder_div2FAAuthSystems').style.display = 'none';
+                document.getElementById('ctl00_ctl00_NICEMasterPageBodyContent_SiteContentPlaceholder_href2FAAuthSystems').textContent = '[show]';
+            } else {
+                document.getElementById('ctl00_ctl00_NICEMasterPageBodyContent_SiteContentPlaceholder_div2FAAuthSystems').style.display = 'inline';
+                document.getElementById('ctl00_ctl00_NICEMasterPageBodyContent_SiteContentPlaceholder_href2FAAuthSystems').textContent = '[hide]';
+            }
+        }
+
+        function showhidedebug() {
+            document.getElementById('ctl00_ctl00_NICEMasterPageBodyContent_SiteContentPlaceholder_divDebug').style.display = 'block';
+            document.getElementById('ctl00_ctl00_NICEMasterPageBodyContent_SiteContentPlaceholder_hrefShowDebug').style.display = 'none';
+        }
+    </script>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.ddslick.js"></script>
+   
+
+<link href="App_Themes/Default/01-CernWeb-General.css" type="text/css" rel="stylesheet" /><link href="App_Themes/Default/02-CernWeb-Header.css" type="text/css" rel="stylesheet" /><link href="App_Themes/Default/03-CernWeb-OISStyle.css" type="text/css" rel="stylesheet" /><link href="App_Themes/Default/06-CustomStyle.css" type="text/css" rel="stylesheet" /><link href="App_Themes/Default/10-CernWeb-SmallDevices.css" type="text/css" rel="stylesheet" /><meta name="robots" content="noindex, nofollow, noarchive" /><title>
+
+</title></head>
+
+   
+
+
+<body id="ctl00_ctl00_NICEMasterPageBody">
+  <form name="aspnetForm" method="post" action="/adfs/ls/?wa=wsignin1.0&amp;wreply=https%3A%2F%2Findico.cern.ch%2FShibboleth.sso%2FADFS&amp;wct=2013-10-27T12%3A48%3A05Z&amp;wtrealm=https%3A%2F%2Findico.cern.ch%2FShibboleth.sso%2FADFS&amp;wctx=cookie%3A60ac3ad4" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTM5MDQ4MDc4OWQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFTWN0bDAwJGN0bDAwJE5JQ0VNYXN0ZXJQYWdlQm9keUNvbnRlbnQkU2l0ZUNvbnRlbnRQbGFjZWhvbGRlciRjaGtSZW1lbWJlckxvZ2lu" />
+<input type="hidden" name="__db" value="14" />
+
+    
+    <div id="ctl00_ctl00_pnlToolbar">
+	
+
+	 <div id="cern-toolbar">
+		    <h1><a href="http://cern.ch" title="CERN">CERN <span>Accelerating science</span></a></h1>
+		    <ul class="cern-signedin">
+                <li class="cern-accountlinks active"><a class="cern-account" title="Sign in to your CERN account">Sign in</a></li>
+			    <li><a class="cern-directory" href="http://cern.ch/directory" title="Search CERN resources and browse the directory">Directory</a></li>
+		    </ul>
+	    </div>
+
+	
+</div>
+      
+    
+    <div id="ctl00_ctl00_pnlHeader">
+	
+        <div id="header" >
+            <div id="ctl00_ctl00_HeaderTitle" class="bgHeaderImage page">
+                <h2 id="site-name">
+    <a href="/" title="Home" rel="home">CERN Single Sign-On</a>
+</h2>
+                <h3 id="site-slogan">
+    Sign in with a CERN account, a Federation account or a public service account
+</h3>
+	        </div>
+
+            <div id="main-navigation" class="page">
+                
+   
+            
+        
+         
+    &nbsp;
+
+            </div>
+        </div>
+    
+</div>
+
+    
+    <div id="page">
+        
+    
+    
+          
+          
+
+
+    
+    
+    
+
+    
+    
+
+    
+    <div id="ctl00_ctl00_NICEMasterPageBodyContent_SiteContentPlaceholder_pnlCernAuthentication">
+	
+        <div class="box_auth">
+            <div class="signinwith fullWidth">Sign in with your CERN account</div>
+            <div class="smaller note important">Reminder: you have agreed to comply with the <a href="http://cern.ch/ComputingRules">CERN computing rules</a></div>
+        
+            <div id="ctl00_ctl00_NICEMasterPageBodyContent_SiteContentPlaceholder_pnlForm">
+		
+            <div class="oneAuthType">Use credentials</div>
+            <div class="oneAuth">
+                <table>
+                <tr>
+                    <td class="box_login smaller" style="color: gray;">Username or Email address</td>
+                    <td class="box_password smaller" style="color: gray;">Password</td>
+                    <td class="box_signinbutton"></td>
+                </tr>
+                <tr>
+                    <td class="box_login"><input name="ctl00$ctl00$NICEMasterPageBodyContent$SiteContentPlaceholder$txtFormsLogin" type="text" id="ctl00_ctl00_NICEMasterPageBodyContent_SiteContentPlaceholder_txtFormsLogin" title="Enter your Username or Email Address" /></td>
+                    <td class="box_password"><input name="ctl00$ctl00$NICEMasterPageBodyContent$SiteContentPlaceholder$txtFormsPassword" type="password" id="ctl00_ctl00_NICEMasterPageBodyContent_SiteContentPlaceholder_txtFormsPassword" /></td>
+                    <td class="box_signinbutton"><input type="submit" name="ctl00$ctl00$NICEMasterPageBodyContent$SiteContentPlaceholder$btnFormsLogin" value="Sign in" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl00$NICEMasterPageBodyContent$SiteContentPlaceholder$btnFormsLogin&quot;, &quot;&quot;, true, &quot;credentials&quot;, &quot;&quot;, false, false))" id="ctl00_ctl00_NICEMasterPageBodyContent_SiteContentPlaceholder_btnFormsLogin" class="button_signin" /></td>
+                </tr>
+           
+                <tr>
+                    <td class="box_login smaller"><div id="ctl00_ctl00_NICEMasterPageBodyContent_SiteContentPlaceholder_pnlForm1">
+			
+                            <span class="subtle"><input id="ctl00_ctl00_NICEMasterPageBodyContent_SiteContentPlaceholder_chkRememberLogin" type="checkbox" name="ctl00$ctl00$NICEMasterPageBodyContent$SiteContentPlaceholder$chkRememberLogin" /><label for="ctl00_ctl00_NICEMasterPageBodyContent_SiteContentPlaceholder_chkRememberLogin">Remember Username or Email Address</label></span>
+                        
+		</div></td>
+                    <td class="box_password smaller" style="vertical-align: bottom;"><a href="https://account.cern.ch/account/Help/?kbid=053010" target="_blank">Need password help ?</a></td>
+                    <td class="box_signinbutton"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="3" class="message error">
+                        <span id="ctl00_ctl00_NICEMasterPageBodyContent_SiteContentPlaceholder_lblFormsError"></span>
+                        &nbsp;
+                        &nbsp;
+                    </td>
+                </tr>
+                </table>
+            </div>
+            
+	</div>
+
+            <div id="ctl00_ctl00_NICEMasterPageBodyContent_SiteContentPlaceholder_pnlOneClickAuthentication">
+		
+                <div class="oneAuthType">Use one-click authentication</div>
+
+                <div id="ctl00_ctl00_NICEMasterPageBodyContent_SiteContentPlaceholder_pnlNTLM">
+			
+                
+                    <div class="oneAuth">
+                            <table>
+                            <tr>
+                                <td rowspan="2" class="fedicon"><img src="/adfs/ls/images/federation/ieff2.png" alt="Kerberos based authentication" /></td>
+                                <td class="fedtitle"><a id="ctl00_ctl00_NICEMasterPageBodyContent_SiteContentPlaceholder_hlNTLM2" href="auth/integrated/?wa=wsignin1.0&amp;wreply=https%3A%2F%2Findico.cern.ch%2FShibboleth.sso%2FADFS&amp;wct=2013-10-27T12%3A48%3A05Z&amp;wtrealm=https%3A%2F%2Findico.cern.ch%2FShibboleth.sso%2FADFS&amp;wctx=cookie%3A60ac3ad4">Sign in using your current Windows/Kerberos credentials</a> 
+                                    <a id="ctl00_ctl00_NICEMasterPageBodyContent_SiteContentPlaceholder_hlNTLMAutologon" title="Enables Autologon with current Windows/Kerberos Credentials. Click Logout in the Application to disable." href="javascript:__doPostBack('ctl00$ctl00$NICEMasterPageBodyContent$SiteContentPlaceholder$hlNTLMAutologon','')">[autologon]</a>
+                                </td>
+                            </tr>
+                                <tr>
+                                <td class="fedtext">Use your current authentication token. You need Internet Explorer on CERN Windows or Firefox on SLC (<a href="http://linux.web.cern.ch/linux/scientific5/docs/rhel/Deployment_Guide/sso-config-firefox.html" target="_blank" style="color: #777777;">Firefox help here</a>).</td>
+                            </tr>
+                        </table>
+                    </div>
+                
+		</div>
+
+                <div id="ctl00_ctl00_NICEMasterPageBodyContent_SiteContentPlaceholder_pnlCertificates">
+			
+                <div class="oneAuth">
+                    <table>
+                        <tr>
+                            <td rowspan="2" class="fedicon"><img src="/adfs/ls/images/federation/eugridpma.png" border="0" alt="Certificate authentication"/></td>
+                            <td class="fedtitle"><a id="ctl00_ctl00_NICEMasterPageBodyContent_SiteContentPlaceholder_hlCertificateAuth" title="Don't forget to first map your Certificate to your CERN Account on http://ca.cern.ch ." href="auth/sslclient/?wa=wsignin1.0&amp;wreply=https%3A%2F%2Findico.cern.ch%2FShibboleth.sso%2FADFS&amp;wct=2013-10-27T12%3A48%3A05Z&amp;wtrealm=https%3A%2F%2Findico.cern.ch%2FShibboleth.sso%2FADFS&amp;wctx=cookie%3A60ac3ad4">Sign in using your Certificate</a>
+                                <a onclick="javascript:return confirm('Warning: please ensure you successfully authenticated with your Certificate by clicking on \'Sign in using your Certificate\' before enabling autologon.\r\nIf autologon is enabled with a bad Certificate your will have to Clear your Browser\'s cookies to disable the feature.\r\nClick Ok to proceed with autologon enabling or Cancel if you are unsure or don\'t understand this message.');" id="ctl00_ctl00_NICEMasterPageBodyContent_SiteContentPlaceholder_hlCertificateAutologon" title="Enables Autologon with Certificate. Click Logout in the Application to disable. Don't forget to first map your Certificate to your CERN Account on http://ca.cern.ch ." href="javascript:__doPostBack('ctl00$ctl00$NICEMasterPageBodyContent$SiteContentPlaceholder$hlCertificateAutologon','')">[autologon]</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="fedtext">Use a EuGridPMA trusted certificate. Don't forget to first <a href="http://cern.ch/accountmap" target="_blank" style="color: #777777;">map your Certificate to your CERN Account</a>.</td>
+                        </tr>
+                    </table>
+                </div>
+                
+		</div>
+            
+	</div>
+
+                
+
+            <div id="ctl00_ctl00_NICEMasterPageBodyContent_SiteContentPlaceholder_pnl2FAsystems">
+		
+            <div class="oneAuthType">Use strong two factor authentication 
+                <a href="javascript:showhide2fa();" id="ctl00_ctl00_NICEMasterPageBodyContent_SiteContentPlaceholder_href2FAAuthSystems" style="font-weight:normal;color:#777777;display:inline;">[show]</a></div>
+            <div id="ctl00_ctl00_NICEMasterPageBodyContent_SiteContentPlaceholder_div2FAAuthSystems" class="oneAuth" style="display:none;">
+                <table id="ctl00_ctl00_NICEMasterPageBodyContent_SiteContentPlaceholder_tbl2FAsystems" border="0" width="100%">
+			<tr>
+				<td class="fedrow"><table class="fedtable" border="0">
+					<tr>
+						<td class="fedicon" rowspan="2"><a href="javascript:__doPostBack('ctl00$ctl00$NICEMasterPageBodyContent$SiteContentPlaceholder$ctl02','')"><img src="/adfs/ls/images/federation/fingerprint.png" border="0" ></a></td><td class="fedtitle"><a href="javascript:__doPostBack('ctl00$ctl00$NICEMasterPageBodyContent$SiteContentPlaceholder$ctl03','')">Two Factor Authentication</a></td>
+					</tr><tr>
+						<td class="fedtext">Two factor authentication using your CERN credentials and a verification code like SMS code or Google Authenticator, a device like Yubikeys or Smartcards or biometry.</td>
+					</tr>
+				</table></td>
+			</tr>
+		</table>
+            </div>
+            
+	</div>
+        </div>
+    
+</div>
+
+    
+    
+
+    
+    <div id="ctl00_ctl00_NICEMasterPageBodyContent_SiteContentPlaceholder_pnlFederation">
+	
+        <div class="box_auth">
+            <div class="signinwith fullWidth">Sign in with a Federation account</div>
+
+            <div class="oneAuth" style="margin-top: 2px;">
+                <table>
+                    <tr>
+                        <td><select name="ctl00$ctl00$NICEMasterPageBodyContent$SiteContentPlaceholder$drpFederation" id="ctl00_ctl00_NICEMasterPageBodyContent_SiteContentPlaceholder_drpFederation">
+		<option value="https://www.egi.eu/idp/shibboleth" data-imagesrc="/adfs/ls/images/federation/egi.png" data-description="In Development: Authenticate using an EGI (European Grid Infrastructure) Login through Federation.">EGI</option>
+
+	</select>
+                        </td>
+                        <td><input type="submit" name="ctl00$ctl00$NICEMasterPageBodyContent$SiteContentPlaceholder$btnSelectFederation" value="Go" id="ctl00_ctl00_NICEMasterPageBodyContent_SiteContentPlaceholder_btnSelectFederation" class="dd-select-button" /></td>
+                    </tr>
+                </table>
+
+                <script language="javascript" type="text/javascript">
+                    $('#ctl00_ctl00_NICEMasterPageBodyContent_SiteContentPlaceholder_drpFederation').ddslick({
+                        selectText: "[Select your Federation here]",
+                        selectImage: "/adfs/ls/images/federation/wayf.png",
+                        selectDescription: "Select your institute of origin for authentication."
+                    });
+                </script>
+            </div>
+        </div>
+    
+</div>
+
+    <a href="javascript:showhidedebug();" id="ctl00_ctl00_NICEMasterPageBodyContent_SiteContentPlaceholder_hrefShowDebug" style="font-weight: normal; color: white; font-size: smaller;">[show debug information]</a>
+    <div id="ctl00_ctl00_NICEMasterPageBodyContent_SiteContentPlaceholder_divDebug" class="box_auth" style="display: none; border-color: #ffd800; background-color: white; ">
+        <div class="signinwith fullWidth">Debug</div>
+        <div style="font-size: x-small; ">
+            Server: ADFS01
+            <br />
+            User Agent: Safari/7536.30.1 CFNetwork/520.5.1 Darwin/11.4.2 (x86_64) (MacBookPro9%2C1)
+         </div>
+    </div>
+   <span id="ctl00_ctl00_NICEMasterPageBodyContent_SiteContentPlaceholder_lblInfo"></span>
+
+
+
+
+    </div>
+
+    
+    <div id="ctl00_ctl00_pnlFooter">
+	
+        <div id="footer">
+            <div class="page">
+                <div class="region-footer-first">
+                        <h2>Related sites</h2>
+                        
+
+    <ul>
+		<li class="leaf"><a href="https://account.cern.ch/account/Help/?kbid=053010" target="_blank">Need password help ?</a></li>
+		<li class="leaf"><a href="http://cern.ch/account" target="_blank">Create/Check your account</a></li>
+		<li class="leaf"><a href="http://www.cern.ch/service-portal" target="_blank">Service Desk</a> <span class='subtle'>+41 22 76 77777</span></li>
+		<li class="leaf"><a href="http://cern.ch/it-support-servicestatus/" target="_blank">IT Services Status Board</a></li>
+		<li class="leaf"><a href="http://www.cern.ch/service-portal" target="_blank">Service Portal (Get Help)</a></li>
+	</ul>
+
+
+                </div>
+
+                <div class="cern-logo">
+                    <a href="http://cern.ch" title="CERN" rel="CERN" ><img class="footer_logo_img" border="0" src="Images/cern-logo-large.png" alt="CERN" border="0" /></a>
+                </div>
+            </div>
+        </div>
+    
+</div>
+    
+  </form>
+
+</body>
+</html>
